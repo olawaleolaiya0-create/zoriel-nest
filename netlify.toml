@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Zero-config Next.js SSR adapter (handles Server Actions, dynamic
+# routes, image optimization). Do not pin a version — Netlify keeps
+# it current automatically on each build.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
